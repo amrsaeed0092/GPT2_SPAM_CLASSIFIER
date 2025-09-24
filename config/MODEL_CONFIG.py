@@ -18,3 +18,12 @@ GPT_MODEL_CONFIGS = {
     "gpt2-large (774M)": {"emb_dim": 1280, "n_layers": 36, "n_heads": 20},
     "gpt2-xl (1558M)": {"emb_dim": 1600, "n_layers": 48, "n_heads": 25},
 }
+
+TRAINING_CONFIG ={
+    "Learning_Rate" : 5e-5,
+    "Weight_Decay" : 0.1,
+    "Epochs" : 5,
+    "Evaluation_Freq": 50,
+    "Evaluation_Iteration": 5,
+    "num_classes" : 2
+}

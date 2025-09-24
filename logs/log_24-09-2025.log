@@ -247,3 +247,137 @@
 [2025-09-24 13:23:19,276]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
 [2025-09-24 13:23:19,907]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
 [2025-09-24 13:23:20,456]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 15:42:19,564]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 15:42:19,648]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 15:42:20,949]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 15:42:21,537]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 15:42:22,216]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 15:42:22,925]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 15:42:23,715]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 15:42:24,366]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 15:42:25,319]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 15:42:26,655]^;INFO^;34^;main.py^;train()^;Training Started at 1758746546.655889
+[2025-09-24 15:44:12,749]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 15:44:12,765]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 15:44:14,098]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 15:44:14,698]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 15:44:15,318]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 15:44:15,998]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 15:44:16,555]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 15:44:17,319]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 15:44:18,566]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 15:44:19,624]^;INFO^;34^;main.py^;train()^;Training Started at 1758746659.6247501
+[2025-09-24 15:45:07,014]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 15:45:07,031]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 15:45:08,501]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 15:45:09,014]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 15:45:09,622]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 15:45:10,481]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 15:45:11,221]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 15:45:12,036]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 15:45:12,868]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 15:45:13,907]^;INFO^;34^;main.py^;train()^;Training Started at 1758746713.9071875
+[2025-09-24 17:13:31,950]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 17:13:31,953]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 17:13:33,485]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 17:13:34,032]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 17:13:34,715]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 17:13:35,645]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 17:13:36,393]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 17:13:37,303]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 17:13:38,700]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 17:13:39,829]^;INFO^;34^;main.py^;train()^;Training Started at 1758752019.8280768
+[2025-09-24 17:15:10,197]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 17:15:10,217]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 17:15:11,648]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 17:15:12,274]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 17:15:13,198]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 17:15:13,890]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 17:15:14,765]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 17:15:15,466]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 17:15:16,264]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 17:15:17,647]^;INFO^;34^;main.py^;train()^;Training Started at 1758752117.6475697
+[2025-09-24 17:16:02,150]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 17:16:02,156]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 17:16:03,452]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 17:16:03,897]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 17:16:04,675]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 17:16:05,298]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 17:16:06,137]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 17:16:06,481]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 17:16:06,920]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 17:18:26,219]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 17:18:26,239]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 17:18:27,537]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 17:18:28,133]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 17:18:28,802]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 17:18:29,455]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 17:18:30,152]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 17:18:30,851]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 17:18:31,565]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 17:19:16,964]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 17:19:16,977]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 17:19:18,573]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 17:19:18,986]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 17:19:19,705]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 17:19:20,422]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 17:19:21,219]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 17:19:22,272]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 17:19:23,013]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 17:21:10,187]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 17:21:10,205]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 17:21:11,449]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 17:21:11,770]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 17:21:12,433]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 17:21:13,064]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 17:21:13,889]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 17:21:14,970]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 17:21:15,680]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 17:21:16,718]^;INFO^;34^;main.py^;train()^;Training Started at 1758752476.718878
+[2025-09-24 17:22:20,032]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 17:22:20,048]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 17:22:21,500]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 17:22:22,018]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 17:22:22,803]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 17:22:23,606]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 17:22:24,305]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 17:22:24,898]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 17:22:25,641]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 17:22:26,630]^;INFO^;34^;main.py^;train()^;Training Started at 1758752546.6308956
+[2025-09-24 17:24:57,819]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 17:24:57,833]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 17:24:58,871]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 17:24:59,425]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 17:25:00,216]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 17:25:00,944]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 17:25:01,732]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 17:25:02,632]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 17:25:03,171]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 17:25:04,172]^;INFO^;34^;main.py^;train()^;Training Started at 1758752704.1724224
+[2025-09-24 17:25:05,906]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 1 (Step 000000): Train loss 0.724, Val loss 0.757
+[2025-09-24 17:25:07,729]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 1 (Step 000050): Train loss 0.676, Val loss 0.683
+[2025-09-24 17:25:09,546]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 1 (Step 000100): Train loss 0.600, Val loss 0.682
+[2025-09-24 17:27:18,752]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 17:27:18,754]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 17:27:20,016]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\checkpoint
+[2025-09-24 17:27:20,520]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\encoder.json
+[2025-09-24 17:27:21,202]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\hparams.json
+[2025-09-24 17:27:21,832]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.data-00000-of-00001
+[2025-09-24 17:27:22,567]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.index
+[2025-09-24 17:27:23,215]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\model.ckpt.meta
+[2025-09-24 17:27:24,148]^;INFO^;63^;gpt2_weight_dowloader.py^;download_file()^;File already exists and is up-to-date: models/gpt2_weights\124M\vocab.bpe
+[2025-09-24 17:27:25,147]^;INFO^;34^;main.py^;train()^;Training Started at 1758752845.1475973
+[2025-09-24 17:27:26,804]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 1 (Step 000000): Train loss 0.724, Val loss 0.757
+[2025-09-24 17:27:28,618]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 1 (Step 000050): Train loss 0.676, Val loss 0.683
+[2025-09-24 17:27:30,439]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 1 (Step 000100): Train loss 0.600, Val loss 0.682
+[2025-09-24 17:27:32,538]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 2 (Step 000150): Train loss 0.602, Val loss 0.600
+[2025-09-24 17:27:34,375]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 2 (Step 000200): Train loss 0.651, Val loss 0.612
+[2025-09-24 17:27:36,200]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 2 (Step 000250): Train loss 0.501, Val loss 0.611
+[2025-09-24 17:27:38,253]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 3 (Step 000300): Train loss 0.390, Val loss 0.581
+[2025-09-24 17:27:40,061]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 3 (Step 000350): Train loss 0.443, Val loss 0.504
+[2025-09-24 17:27:42,122]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 4 (Step 000400): Train loss 0.230, Val loss 0.526
+[2025-09-24 17:27:43,937]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 4 (Step 000450): Train loss 0.477, Val loss 0.420
+[2025-09-24 17:27:45,754]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 4 (Step 000500): Train loss 0.421, Val loss 0.496
+[2025-09-24 17:27:47,814]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 5 (Step 000550): Train loss 0.394, Val loss 0.428
+[2025-09-24 17:27:49,623]^;INFO^;38^;SpamTrainer.py^;train_val()^;Ep 5 (Step 000600): Train loss 0.446, Val loss 0.501
+[2025-09-24 17:27:51,407]^;INFO^;54^;main.py^;train()^;Training completed in 0.44 minutes.
