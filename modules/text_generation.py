@@ -3,6 +3,8 @@ import torch
 from config import MODEL_CONFIG
 from modules.GPT2_Model import GPTModel , generate_text_simple
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 def text_to_token_ids(text, tokenizer):
     encoded = tokenizer.encode(text, allowed_special={'<|endoftext|>'})
     encoded_tensor = torch.tensor(encoded).unsqueeze(0) # add batch dimension
@@ -20,7 +22,7 @@ def example(model, max_new_tokens, example_text = "Hello, I am"):
 
     token_ids = generate_text_simple(
     model=model,
-    idx=encoded_tensor,
+    idx=encoded_tensor.to(device),
     max_new_tokens=max_new_tokens,
     context_size=MODEL_CONFIG.GPT_CONFIG_124M["context_length"]
     )

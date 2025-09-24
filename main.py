@@ -47,9 +47,11 @@ def main():
     DOWNLOAD THE GPT2 PRETRAINED WIEGHTS AND FILES FROM https://openaipublic.blob.core.windows.net/gpt-2/models
     '''
     settings, params = download_and_load_gpt2(model_size=AppConfig.GPT2_MODEL_SIZE, models_dir=AppConfig.GPT2_WEIGHT_MODEL_DIR)
-    print(params)
 
-    evaluate_pretrained_weights(settings, params)
+    '''
+    Use the following function to generate new tokens using the pretrained model
+    '''
+    #evaluate_pretrained_weights(settings, params)
     
     
 
