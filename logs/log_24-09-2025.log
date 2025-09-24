@@ -1,0 +1,11 @@
+[2025-09-24 00:02:32,316]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 00:05:08,030]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 00:07:06,275]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 00:10:17,199]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 00:15:42,833]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 00:16:04,506]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 00:24:58,683]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 00:26:11,687]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 00:26:11,701]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
+[2025-09-24 00:26:29,585]^;INFO^;14^;data_downloader.py^;download_and_unzip_spam_data()^;data\SMSSpamCollection.tsv already exists. Skipping download and extraction.
+[2025-09-24 00:26:29,610]^;INFO^;69^;DataPreprocessor.py^;trainTestSpilit()^;training, testing and validation datasets created in {self.data_file_path}
