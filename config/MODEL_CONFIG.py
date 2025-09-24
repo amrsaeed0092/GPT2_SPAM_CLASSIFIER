@@ -4,7 +4,7 @@ GPT_CONFIG_124M = {
     "emb_dim": 768,        # Embedding dimension
     "n_heads": 12,         # Number of attention heads
     "n_layers": 12,        # Number of layers
-    "drop_rate": 0.1,      # Dropout rate
+    "drop_rate": 0.0,      # Dropout rate
     "qkv_bias": True      # Query-key-value bias
 }
 
@@ -22,8 +22,8 @@ GPT_MODEL_CONFIGS = {
 TRAINING_CONFIG ={
     "Learning_Rate" : 5e-5,
     "Weight_Decay" : 0.1,
-    "Epochs" : 5,
-    "Evaluation_Freq": 50,
-    "Evaluation_Iteration": 5,
+    "Epochs" : 10,
+    "Evaluation_Freq": 10,
+    "Evaluation_Iteration": 10,
     "num_classes" : 2
 }

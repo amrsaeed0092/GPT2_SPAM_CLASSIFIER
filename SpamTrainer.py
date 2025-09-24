@@ -32,15 +32,15 @@ class SpamTrainer:
 
                 # Optional evaluation step
                 if self.global_step % self.eval_freq == 0:
-                    self.train_loss, self.val_loss = self.evaluate_model()
+                    self.train_loss, self.val_loss = self.evaluate_model(self.model)
                     self.train_losses.append(self.train_loss)
                     self.val_losses.append(self.val_loss)
                     logging.info(f"Ep {epoch+1} (Step {self.global_step:06d}): "
                         f"Train loss {self.train_loss:.3f}, Val loss {self.val_loss:.3f}")
 
             # Calculate accuracy after each epoch
-            self.train_accuracy = self.calc_accuracy_loader(data_loader=self.train_loader, num_batches=self.eval_iter)
-            self.val_accuracy = self.calc_accuracy_loader(data_loader=self.val_loader, num_batches=self.eval_iter)
+            self.train_accuracy = self.calc_accuracy_loader(model=self.model, data_loader=self.train_loader, num_batches=self.eval_iter)
+            self.val_accuracy = self.calc_accuracy_loader(model = self.model, data_loader=self.val_loader, num_batches=self.eval_iter)
             print(f"Training accuracy: {self.train_accuracy*100:.2f}% | ", end="")
             print(f"Validation accuracy: {self.val_accuracy*100:.2f}%")
             self.train_accs.append(self.train_accuracy)
@@ -57,7 +57,7 @@ class SpamTrainer:
         return loss
 
 
-    def calc_loss_loader(self, data_loader, num_batches=None):
+    def calc_loss_loader(self, model, data_loader, num_batches=None):
         total_loss = 0.
         if len(data_loader) == 0:
             return float("nan")
@@ -75,16 +75,16 @@ class SpamTrainer:
                 break
         return total_loss / num_batches
     
-    def evaluate_model(self):
-        self.model.eval()
+    def evaluate_model(self, model):
+        model.eval()
         with torch.no_grad():
-            train_loss = self.calc_loss_loader(self.train_loader, num_batches=self.eval_iter)
-            val_loss = self.calc_loss_loader(self.val_loader, num_batches=self.eval_iter)
-        self.model.train()
+            train_loss = self.calc_loss_loader(model, self.train_loader, num_batches=self.eval_iter)
+            val_loss = self.calc_loss_loader(model, self.val_loader, num_batches=self.eval_iter)
+        model.train()
         return train_loss, val_loss
 
-    def calc_accuracy_loader(self, data_loader, num_batches=None):
-        self.model.eval()
+    def calc_accuracy_loader(self, model, data_loader, num_batches=None):
+        model.eval()
         correct_predictions, num_examples = 0, 0
 
         if num_batches is None:
@@ -96,7 +96,7 @@ class SpamTrainer:
                 input_batch, target_batch = input_batch.to(self.device), target_batch.to(self.device)
 
                 with torch.no_grad():
-                    logits = self.model(input_batch)[:, -1, :]  # Logits of last output token
+                    logits = model(input_batch)[:, -1, :]  # Logits of last output token
                 predicted_labels = torch.argmax(logits, dim=-1)
 
                 num_examples += predicted_labels.shape[0]

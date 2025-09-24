@@ -1,4 +1,5 @@
 
+import matplotlib.pyplot as plt
 from modules.DataPreprocessor import DataPreprocessor
 from config import MODEL_CONFIG, DataConfig, AppConfig
 from modules.logger import logging, get_log_file_name
@@ -53,7 +54,30 @@ def train(model, config, train_loader, val_loader):
     execution_time_minutes = (end_time - start_time) / 60
     logging.info(f"Training completed in {execution_time_minutes:.2f} minutes.")
 
-    return train_losses, val_losses, train_accs, val_accs, examples_seen 
+    return Trainer.model, train_losses, val_losses, train_accs, val_accs, examples_seen 
+
+'''
+THIS FUNCTION IS USED TO SAVE THE TRAINING ACCURACY AND LOSS 
+'''
+def plot_values(epochs_seen, examples_seen, train_values, val_values, label="loss"):
+    fig, ax1 = plt.subplots(figsize=(5, 3))
+
+    # Plot training and validation loss against epochs
+    ax1.plot(epochs_seen, train_values, label=f"Training {label}")
+    ax1.plot(epochs_seen, val_values, linestyle="-.", label=f"Validation {label}")
+    ax1.set_xlabel("Epochs")
+    ax1.set_ylabel(label.capitalize())
+    ax1.legend()
+
+    # Create a second x-axis for examples seen
+    ax2 = ax1.twiny()  # Create a second x-axis that shares the same y-axis
+    ax2.plot(examples_seen, train_values, alpha=0)  # Invisible plot for aligning ticks
+    ax2.set_xlabel("Examples seen")
+
+    fig.tight_layout()  # Adjust layout to make room
+    plt.savefig(f"{AppConfig.FIGURE_DIR}/{label}-plot.pdf")
+    plt.show()
+
 
 def main():
     '''
@@ -102,8 +126,27 @@ def main():
 
     for param in model.final_norm.parameters():
         param.requires_grad = True
+    
+    # TRAIN (FINE TUNE) THE MODEL
+    model, train_losses, val_losses, train_accs, val_accs, examples_seen  = train(model = model.to(device), config=MODEL_CONFIG.TRAINING_CONFIG, train_loader = train_loader, val_loader= val_loader)
+    
+    #DRAW THE LOSS VALUES
+    epochs_tensor = torch.linspace(0, MODEL_CONFIG.TRAINING_CONFIG["Epochs"], len(train_losses))
+    examples_seen_tensor = torch.linspace(0, examples_seen, len(train_losses))
+    plot_values(epochs_tensor, examples_seen_tensor, train_losses, val_losses)
 
-    train(model = model.to(device), config=MODEL_CONFIG.TRAINING_CONFIG, train_loader = train_loader, val_loader= val_loader)
+
+    #DRAW THE ACCURACY VALUES
+    epochs_tensor = torch.linspace(0, MODEL_CONFIG.TRAINING_CONFIG["Epochs"], len(train_accs))
+    examples_seen_tensor = torch.linspace(0, examples_seen, len(train_accs))
+    plot_values(epochs_tensor, examples_seen_tensor, train_accs, val_accs, label="accuracy")
+
+    #SAVE THE TRAINED MODEL
+    saveModels(model)
+
+#Save the fine tuned models for future use
+def saveModels(model):
+    torch.save(model.state_dict(), f"{AppConfig.SPAM_TRAINED_MODEL_DIR}/Spam Classifier.pth")    
 
 if __name__ == "__main__":
     main()
