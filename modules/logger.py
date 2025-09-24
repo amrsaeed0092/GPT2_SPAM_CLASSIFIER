@@ -2,9 +2,9 @@ import logging
 from datetime import datetime, date
 import os
 import pandas as pd
+from config import AppConfig
 
 
-LOG_DIR="logs"
 """
 Define timestamps
 """
@@ -26,9 +26,9 @@ def get_log_file_name():
 
 LOG_FILE_NAME=get_log_file_name()
 
-os.makedirs(LOG_DIR,exist_ok=True)
+os.makedirs(AppConfig.LOG_DIR,exist_ok=True)
 
-LOG_FILE_PATH = os.path.join(LOG_DIR,LOG_FILE_NAME)
+LOG_FILE_PATH = os.path.join(AppConfig.LOG_DIR,LOG_FILE_NAME)
 
 
 logging.basicConfig(filename=LOG_FILE_PATH,

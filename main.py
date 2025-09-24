@@ -1,9 +1,26 @@
 
 from modules.DataPreprocessor import DataPreprocessor
-from config import DataConfig, MODEL_CONFIG
+from config import MODEL_CONFIG, DataConfig, AppConfig
 from modules.Data_Handler import createDataLoaders
 from modules.GPT2_Model import GPTModel , generate_text_simple
 import modules.text_generation  as text_gen
+from modules.gpt2_weight_dowloader import download_and_load_gpt2, load_weights_into_gpt
+import os
+import torch
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+def evaluate_pretrained_weights(settings, params):
+    MODEL_CONFIG.GPT_CONFIG_124M.update(MODEL_CONFIG.GPT_MODEL_CONFIGS[MODEL_CONFIG.MODEL_NAME_TO_USE])
+    model_size = MODEL_CONFIG.MODEL_NAME_TO_USE.split(" ")[-1].lstrip("(").rstrip(")")
+
+    model = GPTModel(MODEL_CONFIG.GPT_CONFIG_124M)
+    model = load_weights_into_gpt(model, params)
+    model.to(device)
+    model.eval();
+    #test text generation function without training the model
+    Output = text_gen.example(model, max_new_tokens=15, example_text= "Every effort moves you")
+    print(Output)
 
 
 def main():
@@ -25,9 +42,16 @@ def main():
     print(f"{len(test_loader)} test batches")
     '''
 
-    #test text generation function without training the model
-    Output = text_gen.example(max_new_tokens=12, example_text= "Please let me ")
-    print(Output)
+
+    '''
+    DOWNLOAD THE GPT2 PRETRAINED WIEGHTS AND FILES FROM https://openaipublic.blob.core.windows.net/gpt-2/models
+    '''
+    settings, params = download_and_load_gpt2(model_size=AppConfig.GPT2_MODEL_SIZE, models_dir=AppConfig.GPT2_WEIGHT_MODEL_DIR)
+    print(params)
+
+    evaluate_pretrained_weights(settings, params)
+    
+    
 
 if __name__ == "__main__":
     main()

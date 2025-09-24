@@ -13,14 +13,11 @@ def token_ids_to_text(token_ids, tokenizer):
     return tokenizer.decode(flat.tolist())
 
 
-def example(max_new_tokens, example_text = "Hello, I am"):
+def example(model, max_new_tokens, example_text = "Hello, I am"):
     tokenizer = tiktoken.get_encoding("gpt2")
     start_context = example_text
     encoded_tensor = text_to_token_ids(start_context, tokenizer)
 
-    model = GPTModel(MODEL_CONFIG.GPT_CONFIG_124M)
-
-    model.eval()
     token_ids = generate_text_simple(
     model=model,
     idx=encoded_tensor,
